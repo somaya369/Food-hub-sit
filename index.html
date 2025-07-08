@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="icon" href="img/favicon-96x96.png" type="image/png" />
+<!-- Delivery Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<!-- Header -->
+ <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="delivery-img z-3 " style="width: 10vh;" alt="Delivery">
+<nav class="navbar navbar-expand-lg py-3 bg-black  fixed-top  ">
+  <div class="container-fluid px-4">
+    <span class="logo">Foodelo</span>
+
+    <button class="navbar-toggler ms-auto bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#Home">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#Categories"> Categories</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#restaurants">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#order">Order</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+          
+    </div>
+       <div class="d-flex ms-auto">
+<a href="https://www.google.com/maps?q=Kabul+Afghanistan" target="_blank" class="btn btn-warning rounded-pill">📍 Location</a>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-center new  mt-auto pb-5 ">
+  <h1 class="display-4 fw-bold text-warning zomo">Foodelo</h1>
+  <p class="lead text-white fw-bolder">Discover restaurants that deliver near you</p>
+
+  <!-- Search Bar -->
+  <div class="row justify-content-center my-4 mx-2">
+    <div class="col-md-6 d-flex">
+      <input type="text" class="form-control search-bar" placeholder="Search for Restaurant">
+      <button class="search-btn ">Search</button>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="row justify-content-center mx-2 g-3">
+    <div class="col-md-3 col-sm-6">
+      <div class="feature-box">
+        <i class="bi bi-map"></i>
+        <p>Wide Map</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="feature-box">
+        <i class="bi bi-box-seam"></i>
+        <p>Easiest Order</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 ">
+      <div class="feature-box">
+        <i class="bi bi-truck"></i>
+        <p>Most Delivery</p>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<!-- Categories Section -->
+  <div class="categories-wrapper-steam " id="Categories">
+    <div class="steam"></div>
+<section class="categories-section container mt-auto ">
+  <div class="text-center ">
+    <h3 class="text-warning fw-bolder">Categories</h3>
+    <div class="d-flex justify-content-center align-items-center mb-2">
+      <div class="categories-line"></div>
+    </div>
+    <p class="text-white">Browse out top categories here to discover different food cuisine.</p>
+  </div>
+
+  <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="Pizza" width="50">
+              <h6 class="mt-2 text-white">Pizza</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/1046/1046749.png" alt="Chicken" width="50">
+              <h6 class="mt-2 text-white">Chicken</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Burger" width="50">
+              <h6 class="mt-2 text-white">Burger</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/1046/1046786.png" alt="Fries" width="50">
+              <h6 class="mt-2 text-white">Fries</h6>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/1995/1995056.png" alt="Sushi" width="50">
+              <h6 class="mt-2 text-white">Sushi</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="BBQ" width="50">
+              <h6 class="mt-2 text-white">BBQ</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png" alt="Taco" width="50">
+              <h6 class="mt-2 text-white">Taco</h6>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="category-box text-center p-3 rounded">
+              <img src="https://cdn-icons-png.flaticon.com/512/3174/3174880.png" alt="Salad" width="50">
+              <h6 class="mt-2 text-white">Salad</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Controls -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+    </button>
+  </div>
+</section>
+</div> 
+  <!-- Restaurant list -->
+<section id="restaurants" class="py-2">
+  <div class="container mt-3 ">
+    <h3 class=" text-center text-warning mb-5">Restaurants</h3>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+      <!-- Restaurant 1 -->
+      <div class="col">
+        <div class="card restaurant-card h-100 bg-dark">
+          <img src="img/restaurant1.jpg" class="card-img-top" alt="Pizza Palace">
+          <div class="card-body">
+            <h5 class="card-title text-white">Pizza Palace</h5>
+            <p class="card-text text-white">Authentic Italian pizzas with wood-fired flavors. Enjoy our famous Margherita, Pepperoni, and Veggie Delight straight .</p>
+               <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant 2 -->
+      <div class="col">
+        <div class="card restaurant-card h-100 bg-dark">
+          <img src="img/restaurant2.jpg" class="card-img-top" alt="Sushi World">
+          <div class="card-body">
+            <h5 class="card-title text-white">Sushi World</h5>
+            <p class="card-text text-white">Fresh sushi and sashimi with a modern Japanese touch. Try our salmon rolls, California rolls, and tuna nigiri.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant 3 -->
+      <div class="col">
+        <div class="card restaurant-card h-100 bg-dark">
+          <img src="img/restaurant3 (2).jpg" class="card-img-top" alt="Burger Town">
+          <div class="card-body">
+            <h5 class="card-title text-white">Burger Town</h5>
+            <p class="card-text text-white">Juicy burgers with secret sauces and crispy fries. Choose from classic beef, spicy chicken, or veggie burgers.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant 4 -->
+      <div class="col">
+        <div class="card restaurant-card h-100 bg-dark">
+          <img src="img/restaurant4.jpg" class="card-img-top" alt="Pasta Place">
+          <div class="card-body">
+            <h5 class="card-title text-white">Pasta Place</h5>
+            <p class="card-text text-white">Creamy and spicy pasta dishes straight from Rome. Favorites include Alfredo, Arrabiata, and Pesto Pasta.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center g-4 mt-1">
+      <!-- Restaurant 5 -->
+      <div class="col-lg-3 col-md-6 mb-3">
+        <div class="card restaurant-card h-100 bg-dark">
+          <img src="img/restaurant5.jpg" class="card-img-top" alt="Vegan Delight">
+          <div class="card-body">
+            <h5 class="card-title text-white">Vegan Delight</h5>
+            <p class="card-text text-white">Healthy, plant-based meals full of flavor and color. Explore our quinoa bowls, tofu stir fry, and avocado wraps.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant 6 -->
+      <div class="col-lg-3 col-md-6 mb-3">
+        <div class="card restaurant-card h-100 bg-dark">
+          <img src="img/restaurant6.jpg" class="card-img-top" alt="Grill House">
+          <div class="card-body">
+            <h5 class="card-title text-white">Grill House</h5>
+            <p class="card-text text-white">Grilled meat and BBQ perfection straight from the fire. Best known for ribs, steak, and grilled chicken platters.</p>
+            <a href="#menu" class="btn btn-warning ">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Restaurant Menu Section -->
+ <section id="menu" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="mb-4 text-center text-warning">Menu</h3>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm menu-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p class="card-text flex-grow-1">Classic Italian pizza with fresh tomatoes, mozzarella cheese, and basil.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold">$12.99</span>
+              <span class="badge bg-success text-white">Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm menu-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Spicy Tuna Roll</h5>
+            <p class="card-text flex-grow-1">Fresh tuna with a spicy mayo sauce rolled in seaweed and rice.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold">$15.50</span>
+              <span class="badge bg-danger text-white">Unavailable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm menu-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Grilled Chicken Burger</h5>
+            <p class="card-text flex-grow-1">Juicy grilled chicken breast with lettuce, tomato, and secret sauce.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold">$11.00</span>
+              <span class="badge bg-success text-white">Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm menu-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Vegan Quinoa Bowl</h5>
+            <p class="card-text flex-grow-1">A colorful bowl with quinoa, fresh veggies, and tahini dressing.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold">$13.25</span>
+              <span class="badge bg-success text-white">Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm menu-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BBQ Ribs</h5>
+            <p class="card-text flex-grow-1">Tender ribs grilled with smoky BBQ sauce served with coleslaw.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold">$18.00</span>
+              <span class="badge bg-danger text-white">Unavailable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm menu-card">
+          <div class="card-body d-flex flex-column ">
+            <h5 class="card-title text-white">Spaghetti Carbonara</h5>
+            <p class="card-text flex-grow-1  text-white">Traditional Roman pasta with eggs, cheese, pancetta, and pepper.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="fw-bold  text-white">$14.75</span>
+             <span class="badge bg-success text-white">Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- Order Form -->
+<section id="order" class="order-form-section">
+  <div class="container">
+    <h3 class="text-center mb-4 text-warning">Place Your Order</h3>
+    <form action="#" method="post">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="customerName" class="form-label">Customer Name</label>
+          <input type="text" class="form-control" id="customerName" placeholder="Enter your name">
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="col-md-6">
+          <label for="restaurant" class="form-label">Select Restaurant</label>
+          <select id="restaurant" class="form-select">
+            <option selected disabled>Choose a restaurant</option>
+            <option>Pizza Palace</option>
+            <option>Sushi World</option>
+            <option>Burger Town</option>
+            <option>Pasta Place</option>
+            <option>Vegan Delight</option>
+            <option>Grill House</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label d-block">Menu Items</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="item1">
+            <label class="form-check-label" for="item1">Margherita Pizza</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="item2">
+            <label class="form-check-label" for="item2">Tuna Sushi</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="item3">
+            <label class="form-check-label" for="item3">Grilled Chicken</label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+         
+          <button type="submit" class="btn btn-warning px-5 mt-3">Submit Order</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="About Foodie Hub" class="img-fluid w-100">
+      </div>
+      <div class="col-md-6">
+        <h3>About Foodie Hub</h3>
+        <p>
+          Foodie Hub is your go-to platform for exploring local restaurants and ordering your favorite meals—all in one place. Our goal is to connect food lovers with a variety of culinary options, whether you're craving sushi, pizza, burgers, or vegan delights.
+        </p>
+        <p>
+          Designed to be fast, accessible, and user-friendly, Foodie Hub helps you discover new tastes and place orders effortlessly, with a responsive interface that works great on all devices.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section-->
+<section class="modern-contact-section py-5 bg-black" id="contact">
+     <h3 class="text-center mb-4 text-warning">Contact</h3>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 mb-4">
+       <div class="modern-contact-left text-white">
+
+  <h2 class="fw-bold mb-3">We'd Love to Hear from You</h2>
+  <p class="mb-4">
+    Whether it's a kind word or a curious question — we're here to listen and respond.
+  </p>
+  <div class="row g-3">
+    <div class="col-6">
+      <div class="contact-card text-center p-3 rounded h-100">
+        <i class="bi bi-stars fs-1 text-warning"></i>
+        <p class="mt-2 mb-0 fw-semibold">Give Feedback</p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="contact-card text-center p-3 rounded h-100">
+        <i class="bi bi-person-heart fs-1 text-danger"></i>
+        <p class="mt-2 mb-0 fw-semibold">Talk to Us</p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="contact-card text-center p-3 rounded h-100">
+        <i class="bi bi-hand-thumbs-up fs-1 text-success"></i>
+        <p class="mt-2 mb-0 fw-semibold">Share Love</p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="contact-card text-center p-3 rounded h-100">
+        <i class="bi bi-patch-question fs-1 text-info"></i>
+        <p class="mt-2 mb-0 fw-semibold">Ask Question</p>
+      </div>
+    </div>
+  </div>
+  <div class="mt-4">
+    <p class="small text-white-50 fst-italic">We’re all ears — honest, kind, and curious ones!</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-6">
+        <div class="modern-contact-form bg-white p-4 rounded shadow">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control" placeholder="Your full name" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control" placeholder="Your email" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                <input type="tel" class="form-control" placeholder="Your phone number">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-danger px-4">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-about">
+          <h3 class="footer-title">About Foodelo</h3>
+          <p class="footer-text">Lorem ipsum dolor sit amconsectetur adipisicing elit.</p>
+          <div class="contact-info mt-4">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Elizabeth Tower, 6th Floor Medtown, New York</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+088 01673-453290</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+088 01773-458290</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span><a href="" class="link text-warning">Aahardelivery@email.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-gallery">
+          <h3 class="footer-title">Our Gallery</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=200&q=80" alt="Healthy Food" class="img-fluid">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=200&q=80" alt="Fresh Ingredients" class="img-fluid">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=200&q=80" alt="Breakfast" class="img-fluid">
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=200&q=80" alt="Toast" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-hours">
+          <h3 class="footer-title">Opening Time</h3>
+          <ul class="hours-list">
+            <li><span class="day">Saturday:</span> <span class="time">9am to 11pm</span></li>
+            <li><span class="day">Sunday:</span> <span class="time">9am to 11pm</span></li>
+            <li><span class="day">Monday:</span> <span class="time">9am to 11pm</span></li>
+            <li><span class="day">Tuesday:</span> <span class="time">9am to 11pm</span></li>
+            <li><span class="day">Wednesday:</span> <span class="time">9am to 11pm</span></li>
+            <li><span class="day">Thursday:</span> <span class="time">9am to 11pm</span></li>
+            <li><span class="day">Friday:</span> <span class="time">9am to 11pm</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright-text">
+            <p>&copy; 2023 Aahar Restaurant. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
