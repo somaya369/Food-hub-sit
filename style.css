@@ -595,5 +595,8 @@ hours-list {
   text-decoration: none;
 
 }
-
+.social-icons a:hover {
+  color: #fff;
+  transition: 0.3s ease;
+}
 
